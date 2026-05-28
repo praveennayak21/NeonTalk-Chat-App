@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeonTalk — Room</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="chat-page">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+      <span>⚡</span> NeonTalk
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Rooms</span>
+      <ul class="room-list" id="roomList">
+        <li class="room-item active" data-room="general">
+          <span class="room-hash">#</span> general
+          <span class="room-dot"></span>
+        </li>
+        <li class="room-item" data-room="tech">
+          <span class="room-hash">#</span> tech
+        </li>
+        <li class="room-item" data-room="random">
+          <span class="room-hash">#</span> random
+        </li>
+        <li class="room-item" data-room="jobs">
+          <span class="room-hash">#</span> jobs
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-user" id="sidebarUser">
+      <span class="user-avatar" id="sidebarAvatar"></span>
+      <span class="user-name" id="sidebarName"></span>
+      <button class="btn-logout" id="btnLogout" title="Logout">✕</button>
+    </div>
+
+  </aside>
+
+  <!-- MAIN CHAT -->
+  <main class="chat-main">
+
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="chat-header-left">
+        <span class="chat-room-hash">#</span>
+        <span class="chat-room-name" id="chatRoomName">general</span>
+        <span class="chat-room-desc" id="chatRoomDesc">General discussion</span>
+      </div>
+      <div class="chat-header-right">
+        <span class="online-badge">🟢 Online</span>
+      </div>
+    </header>
+
+    <!-- Messages -->
+    <div class="messages-wrap" id="messagesWrap">
+      <div class="messages-list" id="messagesList">
+        <!-- Messages injected by chat.js -->
+      </div>
+    </div>
+
+    <!-- Input bar -->
+    <div class="chat-input-bar">
+      <div class="emoji-wrap">
+        <button class="btn-emoji" id="btnEmoji">😊</button>
+        <div class="emoji-picker" id="emojiPicker">
+          😊 😂 🔥 💯 👍 🎉 😎 🤔 💡 🚀 ❤️ 😅 👀 🙌 ✅ 😭
+        </div>
+      </div>
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Message #general…"
+        maxlength="500"
+        autocomplete="off"
+      />
+      <button class="btn-send" id="btnSend">Send ↑</button>
+    </div>
+
+  </main>
+
+  <script src="chat.js"></script>
+</body>
+</html>

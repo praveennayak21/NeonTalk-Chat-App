@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeonTalk — Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="login-page">
+
+  <div class="login-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <main class="login-container">
+
+    <div class="login-card">
+
+      <div class="login-logo">
+        <span class="logo-icon">⚡</span>
+        <h1>NeonTalk</h1>
+      </div>
+
+      <p class="login-tagline">Real-time chat. Zero friction.</p>
+
+      <div class="login-form">
+
+        <div class="input-group">
+          <label for="usernameInput">Your username</label>
+          <div class="input-wrap">
+            <span class="input-prefix">@</span>
+            <input
+              type="text"
+              id="usernameInput"
+              placeholder="enter a cool name…"
+              maxlength="20"
+              autocomplete="off"
+            />
+          </div>
+          <span class="input-hint" id="inputHint">2–20 characters, no spaces</span>
+        </div>
+
+        <div class="avatar-picker">
+          <label>Pick your avatar</label>
+          <div class="avatar-grid" id="avatarGrid">
+            <button class="avatar-btn active" data-avatar="🦊">🦊</button>
+            <button class="avatar-btn" data-avatar="🐼">🐼</button>
+            <button class="avatar-btn" data-avatar="🦁">🦁</button>
+            <button class="avatar-btn" data-avatar="🐸">🐸</button>
+            <button class="avatar-btn" data-avatar="🤖">🤖</button>
+            <button class="avatar-btn" data-avatar="👾">👾</button>
+            <button class="avatar-btn" data-avatar="🧠">🧠</button>
+            <button class="avatar-btn" data-avatar="🔥">🔥</button>
+          </div>
+        </div>
+
+        <button class="btn-enter" id="btnEnter">
+          Enter Chat <span>→</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <p class="login-footer">No account needed · Open source · Free forever</p>
+
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
