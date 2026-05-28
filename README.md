@@ -37,4 +37,4 @@ Open `index.html` in your browser — no install needed!
 
 ## Live Demo
 
-_Coming soon_
+_https://imaginative-daffodil-67d9aa.netlify.app/_
